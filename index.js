@@ -72,16 +72,16 @@
 // ***
 // ****
 
-let n = 4;
-let string = "";
+// let n = 4;
+// let string = "";
 
-for (let i = 0; i < n; i++) {
-  for (let j = 0; j <= i; j++) {
-    string += "*";
-  }
-  string += "\n";
-}
-console.log(string);
+// for (let i = 0; i < n; i++) {
+//   for (let j = 0; j <= i; j++) {
+//     string += "*";
+//   }
+//   string += "\n";
+// }
+// console.log(string);
 
 (5).question;
 // *****

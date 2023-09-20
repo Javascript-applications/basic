@@ -19,6 +19,14 @@
                 li.textContent = iterator;
                 ul.appendChild(li);
             }
+
+            const ifram = document.createElement("iframe");
+            document.body.appendChild(ifram);
+
+            const xArray  = window.frames[ window.frames.length- 1].Array;
+            console.log(xArray);
+            const arr1 = new xArray(1,2,3);
+            console.log(arr1);
         </script>
     </body>
 </html>
