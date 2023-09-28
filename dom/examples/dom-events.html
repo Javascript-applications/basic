@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM Events</title>
+    </head>
+    <body>
+        <p id="cookies"></p>
+        <input type="text" id="fname" onchange="handleUppercase()">
+        <br />
+        <br />
+        <div onmouseover="mOver(this)" onmouseout="mOut(this)"
+            style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+            Mouse Over Me</div>
+        <br />
+        <div onmousedown="mDown(this)" onmouseup="mUp(this)"
+            style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+            click me</div>
+    </body>
+    <script>
+        function mOver(id) {
+            id.innerHTML = 'Thank You'
+        }
+          function mOut(id) {
+             id.innerHTML = 'Mouse Over Me'
+        }
+          function mDown(id) {
+            id.style.backgroundColor = '#1ec5e5';
+            id.innerHTML = 'Relase Me'
+        }
+          function mUp(id) {
+              id.style.backgroundColor = '#D94A38';
+            id.innerHTML = 'Thank you'
+        }
+        function handleUppercase() {
+             const x = document.getElementById('fname');
+             x.value = x.value.toUpperCase();
+        }
+       window.addEventListener("load", function(){
+          let text;
+          console.log("navigator",navigator);
+          if(navigator.cookieEnabled=== true){
+            text = 'Cookies are enabled.'
+          }else{
+            text = 'Cookies are not enabled.'
+          }
+          document.getElementById('cookies').innerHTML = text;
+       })
+    </script>
+</html>
