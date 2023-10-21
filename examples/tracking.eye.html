@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tracking Eyes</title>
+    </head>
+    <body>
+
+    </body>
+    <script>
+
+        const mouseXStartPoint = 300;
+        const mouseXEndPoint = window.innerWidth - mouseXStartPoint;
+        let currentXPosition = 0;
+        let fracXValue = 0
+
+        const mouseYEndPoint = window.innerHeight;
+        let currentYPosition = 0;
+        let fracYValue = 0
+
+
+        const mouseXRange = mouseXEndPoint - mouseXStartPoint;
+
+        function mouseMove(event) {
+
+           currentXPosition = event.clientX - mouseXStartPoint;
+           fracXValue =  currentXPosition / mouseXRange;
+           console.log("fracXValue",fracXValue);
+           
+           currentYPosition = event.clientY;
+           fracXValue =  currentYPosition / mouseYEndPoint;
+           console.log("fracYValue",fracXValue);
+
+        }
+
+        window.addEventListener("mousemove", mouseMove)
+
+    </script>
+</html>

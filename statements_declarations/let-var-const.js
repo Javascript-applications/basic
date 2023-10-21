@@ -164,3 +164,46 @@
 // }
 
 // console.log(b);
+
+// x = 5;
+// let x;
+
+// let a = 10;
+// console.log(a);
+
+// function codeHoist() {
+//   a = 10;
+//   let username = "deepak";
+// }
+
+// codeHoist();
+
+// console.log(a);
+// console.log(username);
+
+// console.log(name);
+// var name = "deepak";
+
+// let a;
+// console.log(a);
+// a = 10;
+
+// function one() {
+//   console.log(name);
+//   let name = "deepak";
+// }
+
+// one();
+
+// let addNum = function () {
+//   let name = "deepak";
+//   console.log(name);
+// };
+
+// addNum();
+
+x = 5;
+
+let x;
+
+console.log(x);
