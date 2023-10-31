@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <h3>Reverse a string</h3>
+
+        <input type="text" id="reverseText" onkeyup="handleReversString()" />
+
+        <input type="text" id="show" />
+
+    </body>
+    <script>
+
+        function handleReversString(event) {
+           const str = document.getElementById("reverseText").value;
+           let reverseStr = "";
+           for (let i = str.length-1; i >= 0; i--) {   
+            console.log(reverseStr); 
+            reverseStr += str[i];     
+               
+           }
+           document.getElementById("show").value  = reverseStr;
+        }
+
+    </script>
+</html>
