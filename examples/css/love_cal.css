@@ -1,0 +1,31 @@
+body {
+  background-color: rgb(243, 243, 243);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.result_section {
+  margin: 50px;
+
+  #result {
+    background-color: brown;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+  }
+}
+
+.field_section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
