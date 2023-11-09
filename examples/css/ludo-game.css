@@ -1,0 +1,9 @@
+body {
+  background-color: beige;
+}
+
+.dice {
+  color: blue;
+  font-weight: bold;
+  font-size: 1.5rem;
+}

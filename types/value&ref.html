@@ -1,0 +1,39 @@
+<script>
+    let a = 5;
+    let b = a;
+
+    b = b + 5;
+
+    console.log(a);
+    console.log(b);
+
+
+    const obj = {
+        name: "deeopak",
+        age: 20,
+    }
+
+    const obj1 = obj;
+
+    obj1.age = 22;
+    console.log(obj);
+    console.log(obj1);
+
+    const like = 100;
+
+    const object = {
+        name: "deepak",
+        subscribe: 100,
+    }
+
+    const func = (a, b) => {
+        a = 200;
+        b.subscribe = 200;
+    }
+
+    func(like, object);
+
+    console.log(like);
+
+    console.log(object.subscribe);
+</script>

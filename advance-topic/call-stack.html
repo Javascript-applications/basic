@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Call Stack (Execution Stack)</title>
+    </head>
+
+    <body>
+
+    </body>
+    <script>
+    const globalEC = "abcd";
+
+    function a() {
+        const fa = "second function 0/p1";
+        console.log(fa);
+        debugger;
+        b();
+        console.log("Let's see when i will console log");
+
+    }
+
+    function b() {
+        debugger;
+        console.log("second function 0/p2");
+        c();
+    }
+
+    function c() {
+        debugger;
+        console.log("second function 0/p3");
+
+    }
+
+    debugger;
+    a();
+</script>
+
+</html>
