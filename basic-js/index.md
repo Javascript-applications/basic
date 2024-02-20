@@ -38,7 +38,7 @@ https://blog.hubspot.com/website/what-is-javascript#:~:text=JavaScript's%20most%
 * JavaScript is a client side scripting or programming language that allows you to implement complex features  
    on web pages. and It create dynamically updating content, control multimedia, animate images, and pretty much everything else. and It is use to intraction and to add functionalites on web pages.
 
-* Without any additional libraries javascript is also called as "vanilla javascript". Which helps to making nteractive web pages. interpreted and executed on client machine. It was invented by Brendan Eich.
+* Without any additional libraries javascript is also called as "vanilla javascript". Which helps to making interactive web pages. interpreted and executed on client machine. It was invented by Brendan Eich.
 
 ## How do you add JavaScript to your page?
 
