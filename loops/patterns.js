@@ -408,19 +408,240 @@
 // C D E
 // D E F G
 
-let n = 4,
-  i = 1,
-  pattern = "";
+// let n = 4,
+//   i = 1,
+//   pattern = "";
 
-while (i <= n) {
-  let j = 1;
+// while (i <= n) {
+//   let j = 1;
 
-  while (j <= i) {
-    pattern += `${String.fromCharCode("A".charCodeAt() + i + j - 2)} `;
-    j++;
-  }
-  pattern += "\n";
-  i++;
-}
+//   while (j <= i) {
+//     pattern += `${String.fromCharCode("A".charCodeAt() + i + j - 2)} `;
+//     j++;
+//   }
+//   pattern += "\n";
+//   i++;
+// }
 
-console.log(pattern);
+// console.log(pattern);
+
+// =============================
+// (18)
+// D
+// C D
+// B C D
+// A B C D
+
+// let n = 4,
+//   i = 1,
+//   pattern = "";
+
+// while (i <= n) {
+//   let j = 1;
+//   let ascii = "A".charCodeAt() + n - i - j + 1;
+
+//   while (j <= i) {
+//     pattern += String.fromCharCode(ascii);
+//     ascii++;
+//     j++;
+//   }
+
+//   pattern += "\n";
+//   i++;
+// }
+
+// console.log(pattern);
+
+// =============================
+// (19)
+// A B C
+// B C D
+// C D E
+
+// let n = 3,
+//   i = 1,
+//   pattern = "";
+
+// while (i <= n) {
+//   let j = 1;
+
+//   while (j <= n) {
+//     pattern += String.fromCharCode("A".charCodeAt() + i + j - 2);
+//     j++;
+//   }
+
+//   pattern += "\n";
+//   i++;
+// }
+
+// console.log(pattern);
+
+// =============================
+// (19)
+//       *
+//     * *
+//   * * *
+// * * * *
+
+// let n = 4,
+//   i = 1,
+//   pattern = "";
+
+// while (i <= n) {
+//   let j = 1,
+//     k = 1;
+
+//   while (k <= n - i) {
+//     pattern += " ";
+//     k++;
+//   }
+
+//   while (j <= i) {
+//     pattern += "*";
+//     j++;
+//   }
+//   pattern += "\n";
+//   i++;
+// }
+
+// console.log(pattern);
+
+// =============================
+// (20)
+// * * * *
+// * * *
+// * *
+// *
+
+// let n = 4,
+//   i = 1,
+//   pattern = "";
+
+// while (i <= n) {
+//   let j = 1;
+
+//   while (j <= n - i + 1) {
+//     pattern += "*";
+//     j++;
+//   }
+//   pattern += "\n";
+//   i++;
+// }
+
+// console.log(pattern);
+
+// =============================
+// (21)
+// * * * *
+//   * * *
+//     * *
+//       *
+
+// let n = 4,
+//   i = 1,
+//   pattern = "";
+
+// while (i <= n) {
+//   let j = 1,
+//     k = 1;
+
+//   while (k <= i - 1) {
+//     pattern += " ";
+//     k++;
+//   }
+
+//   while (j <= n - i + 1) {
+//     pattern += "*";
+//     j++;
+//   }
+
+//   pattern += "\n";
+//   i++;
+// }
+
+// console.log(pattern);
+
+// =============================
+// (22)
+//       1
+//     1 2 1
+//   1 2 3 2 1
+// 1 2 3 4 3 2 1
+
+// let n = 4,
+//   i = 1,
+//   pattern = "";
+
+// while (i <= n) {
+//   let j = 1,
+//     k = 1,
+//     space = 1,
+//     l = i - 1;
+
+//   while (k <= n - i) {
+//     pattern += " ";
+//     k++;
+//   }
+
+//   while (j <= i) {
+//     pattern += j;
+//     j++;
+//   }
+
+//   while (space <= i - 1) {
+//     pattern += l;
+//     l--;
+//     space++;
+//   }
+
+//   pattern += "\n";
+//   i++;
+// }
+
+// console.log(pattern);
+
+// =============================
+// (23)
+// 1 2 3 4 5 5 4 3 2 1
+// 1 2 3 4 * * 4 3 2 1
+// 1 2 3 * * * * 3 2 1
+// 1 2 * * * * * * 2 1
+// 1 * * * * * * * * 1
+
+// let n = 5,
+//   i = 0,
+//   pattern = "";
+
+// while (i < n) {
+//   // pattern one
+
+//   let j = 1;
+
+//   while (j <= n - i) {
+//     pattern += j;
+//     j++;
+//   }
+
+//   // pattern for *
+
+//   let loop = 1;
+
+//   while (loop <= i * 2) {
+//     pattern += "*";
+//     loop++;
+//   }
+
+//   // pattern two
+
+//   let k = n - i;
+
+//   while (k) {
+//     pattern += k;
+//     k--;
+//   }
+
+//   pattern += "\n";
+//   i++;
+// }
+
+// console.log(pattern);
