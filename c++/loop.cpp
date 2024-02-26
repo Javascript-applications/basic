@@ -1,25 +1,27 @@
-// Loops statements
 #include <iostream>
 using namespace std;
 
 int main()
 {
 
-    int n = 3, i = 1;
+    int n, i = 1;
 
-    while (i <= n)
+    cout << "Enter a Number" << endl;
+    cin >> n;
+
+    cout << "Printing a number 1 to n" << endl;
+
+    for (;;)
     {
-        int j = 1;
-
-        char ch = 'A' + i - 1;
-
-        while (j <= n)
+        if (i <= n)
         {
-            cout << ch << " ";
-            j++;
+            cout << i << endl;
+        }
+        else
+        {
+            break;
         }
 
-        cout << endl;
         i++;
     }
 }
