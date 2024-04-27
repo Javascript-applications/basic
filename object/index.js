@@ -64,3 +64,13 @@
 //     console(Info.cars[i].models[j]);
 //   }
 // }
+
+// let obj = {
+//   fistN: "Deepak",
+//   LastN: "kurmi",
+//   age: 24,
+//   fullName: function () {
+//     return this.fistN + this.LastN;
+//   },
+//   product: [1, 2, 3],
+// };
