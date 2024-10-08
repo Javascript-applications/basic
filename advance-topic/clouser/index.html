@@ -1,0 +1,26 @@
+<script>
+    function handleRent(initRent) {
+  var rentPrice = initRent;
+
+  return {
+    incRent: function (amount) {
+      rentPrice += amount;
+    },
+    decRent: function (amount) {
+      rentPrice -= amount;
+    },
+    getRent: function () {
+        debugger;
+      console.log(rentPrice);
+    },
+  };
+}
+
+var Rent = handleRent(2000);
+
+Rent.getRent();
+Rent.incRent(1000);
+Rent.incRent(400);
+Rent.decRent(200);
+Rent.getRent();
+</script>

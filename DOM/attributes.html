@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="text" id="username" secured="true" tabindex="1" />
+
+        <div id="main" data-progress="pending" data-value="10%"></div>
+
+        <button id="btnSend" disabled>Send</button>
+
+    </body>
+    <script>
+        
+    const input = document.querySelector('#username');
+    const main_02 = document.querySelector("#main");
+    const btn= document.querySelector("#btnSend");
+
+    console.log(btn.hasAttribute("disabled"));
+    
+    console.log(main_02.dataset);
+
+    input.setAttribute('tabindex', 2);
+    console.log(input.tabIndex);
+
+    input.setAttribute('value','guest');
+    console.log(input.value);  // guest
+
+    input.tabIndex = 3;
+    console.log(input.getAttribute("tabindex"));
+
+    input.value = 'admin';
+    console.log(input.getAttribute('value')); // guest
+
+  </script>
+</html>

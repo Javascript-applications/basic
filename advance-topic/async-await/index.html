@@ -1,0 +1,15 @@
+<script>
+const promise = new Promise(function (resolve, reject) {
+  resolve('I am resolved');
+});
+
+console.log(promise);
+
+
+async function handlePromise() {
+  const res = await promise;
+  console.log(res);
+}
+
+handlePromise();
+</script>

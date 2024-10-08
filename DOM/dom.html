@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <h2>DOM</h2>
+    <input type="text" id="message" />
+    <button id="btn" class="active">Click Me</button>
+
+    <div id="main" class="main">
+      <p class="note">This is a note!</p>
+    </div>
+
+    <ul id="menu">
+      <li>Services</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+    <!-- 
+    <ul id="menu">
+      <li class="first">Home</li>
+      <li>Products</li>
+      <li class="current">Customer Support</li>
+      <li>Careers</li>
+      <li>Investors</li>
+      <li>News</li>
+      <li class="last">About Us</li>
+    </ul> -->
+  </body>
+  <script>
+
+     window.addEventListener("scroll", () => {
+        console.log("scrolling");
+     })
+
+    const msg = document.getElementById("message");
+
+    msg.onkeypress = function () {
+       console.log("pressed");
+    }
+    // const current = document.querySelector('.current');
+    // let previousSibling = current.previousElementSibling;
+
+    // while (previousSibling) {
+    //   console.log(previousSibling);
+    //   previousSibling = previousSibling.previousElementSibling;
+    // }
+
+    // const button = document.querySelector('button');
+    // if (button.matches('.active')) {
+    //   console.log('The button is active');
+    // } else {
+    //   console.log('The button is not active');
+    // }
+
+    // const main = document.querySelector('#menu');
+
+    // const list = main.closest("body");
+
+    // console.log(list);
+
+
+    document.addEventListener('unload', () => {
+      alert('The page is unloaded');
+    });
+
+    
+    window.addEventListener('beforeunload', (e) => {
+      e.preventDefault();
+      e.returnValue = '';
+    });
+    // let menu = document.getElementById('menu');
+    // // create a new li node
+    // let li = document.createElement('li');
+    // li.textContent = 'Home';
+
+    // // insert a new node before the first list item
+    // menu.insertBefore(li, menu.firstElementChild);
+
+    // const div = document.getElementById('main');
+    // const paragraph = document.querySelector('.note');
+
+    // if (div.contains(paragraph)) {
+    //   console.log('The div contains a paragraph');
+    // } else {
+    //   console.log('The div does not contain any paragraph');
+    // }
+
+    // function getSiblings(e) {
+    //   const siblings = [];
+
+    //   if (!e.parentNode) {
+    //     return siblings;
+    //   }
+
+    //   let sibling = e.parentNode.firstChild;
+
+    //   while (sibling) {
+    //     if (sibling.nodeType === 1 && sibling !== e) {
+    //       siblings.push(sibling);
+    //     }
+
+    //     sibling = sibling.nextSibling;
+    //   }
+
+    //   return siblings;
+    // }
+
+    // let siblings = getSiblings(document.querySelector('.current'));
+    // let siblingText = siblings.map((e) => e.innerHTML);
+    // console.log(siblingText);
+  </script>
+</html>

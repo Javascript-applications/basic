@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 id="heading">Dom Methods</h1>
+
+    <p>
+      HTML DOM methods are actions you can perform (on HTML Elements).
+      HTML DOM
+      properties are values (of HTML Elements) that you can set or change.
+    </p>
+
+    <h2 class="subtitle">Element Selector</h2>
+
+    <ul>
+      <li>getElementById()</li>
+      <li>getElementsByName()</li>
+      <li>getElementsByTagName()</li>
+      <li>getElementsByClassName()</li>
+      <li>querySelector()</li>
+    </ul>
+
+    <label for="very-poor">
+      <input type="radio" name="rate" value="Very poor" id="very-poor" />
+      Very poor
+    </label>
+  </body>
+  <script>
+      //  const Id = document.getElementById("heading"); // Element Object
+      //  const Id = document.getElementsByName("rate"); // NodeList
+      //  const Id = document.getElementsByTagName("h1");  // HTMLCollection 
+      // const Id = document.getElementsByClassName("subtitle"); // HTMLCollection 
+    // const Id = document.querySelector('.subtitle'); // Element Object
+      //  const Id = document.querySelectorAll('li'); // NodeList
+
+    // console.log(Id);
+  </script>
+</html>
