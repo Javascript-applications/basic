@@ -4,7 +4,9 @@ https://javascript.info/
 
 https://2ality.com/index.html
 
+https://www.toolsqa.com/javascript/javascript-tutorial/
 
+https://www.toolsqa.com/javascript/prototype-in-javascript/
 
 <!-- ============ -->
 
