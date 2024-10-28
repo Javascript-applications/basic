@@ -2,11 +2,35 @@
 // ========================================
 // let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
+// const arrIterator = arr[Symbol.iterator]();
+
+// console.log(arrIterator.next());
+
 // for (const iterator of arr) {
 //   console.log(iterator);
 // }
 
-// const obj = {};
+// const obj = {
+//   name: 'Deepakkurmi',
+//   num: 0,
+//   next() {
+//     let done = false;
+//     if (this.num > this.name.length - 1) {
+//       done = true;
+//     }
+//     const result = { value: this.name[this.num], done };
+//     this.num++;
+//     return result;
+//   },
+
+//   [Symbol.iterator]() {
+//     return this;
+//   },
+// };
+
+// for (const iterator of obj) {
+//   console.log(iterator);
+// }
 
 // obj[Symbol.iterator] = function () {
 //   let n = 1;
@@ -40,12 +64,12 @@
 
 // let objectString = {
 //   value: 'Deepak kurmi',
-//   [Symbol.iterator]: function () {
+//   [Symbol.iterator]() {
 //     let counter = 0;
 //     const stringValue = this.value;
 //     const stringLn = stringValue.length;
 //     const returnObject = {
-//       next: function () {
+//       next() {
 //         let done = false;
 //         if (stringLn === counter) {
 //           done = true;
