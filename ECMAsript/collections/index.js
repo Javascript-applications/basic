@@ -169,3 +169,45 @@
 // }
 
 // console.log(result);
+
+// const set = new Set([1, 2, 4, 4, 5]);
+
+// set.add(3);
+
+// // set.clear();
+
+// // set.delete();
+
+// console.log(set.size);
+
+// console.log(set.intersection());
+
+// console.log(set);
+
+// const arr = [1, 2, 1, 3, 3, 5, 6];
+
+// Array.prototype.union = function (arr) {
+//   return [...new Set(arr)];
+// };
+
+// console.log(arr.union(arr));
+
+// console.log(arr);
+
+// let obj = { name: 'rahul' };
+
+// // let newObj = obj;
+
+// obj = null;
+
+// console.log(obj?.name);
+
+// const data = { id: 1 };
+
+// const map = new WeakMap();
+
+// map.set(data, 'c++');
+
+// console.log(map.has(data));
+
+// console.log(map);

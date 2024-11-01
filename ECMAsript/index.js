@@ -175,3 +175,109 @@
 //   name: 'modi',
 //   __proto__: person,
 // };
+
+// const arr = [1, 2, 4, 5];
+// const arrOne = [1, 2, 4, 5];
+
+// console.log(Array.from(arr, (x) => x + 3));
+
+// console.log(Array.isArray(arr));
+
+// console.log(Array.of('foo', 2, 'bar', true));
+
+// console.log(arr.at(2));
+
+// console.log('concat', arr.concat(arrOne));
+
+// const array1 = [1, 2, 3, 4, 5, 6, 7, 8];
+
+// Copy to index 0 the element at index 3
+// console.log(array1.copyWithin(1, 2));
+// Expected output: Array ["d", "b", "c", "d", "e"];
+
+// const iterator = array1.entries();
+
+// console.log(iterator.next().value);
+// console.log(iterator.next().value);
+
+// console.log(array1.every((value) => value < 5));
+
+// console.log(array1.fill(0, 3, 5));
+
+// const words = [
+//   {
+//     name: 'admin',
+//     isAdmin: true,
+//   },
+//   {
+//     name: 'user',
+//     isAdmin: false,
+//   },
+// ];
+
+// const array1 = [1, 2, 3, 4, 5, 6, 7, 9];
+
+// const result = words.filter((value) => value.length > 6);
+
+// console.log(result);
+
+// console.log(result);
+
+// const result = words.find((value) => value.name === 'admin');
+
+// const index = array1.findIndex((ele) => ele > 6);
+// console.log(index);
+// console.log(array1[index]);
+
+// const result = array1.findLastIndex((ele) => ele > 6);
+
+// console.log(result);
+
+// console.log();
+
+// const arr2 = [0, 1, [2, [3, [4, 5]]]];
+
+// console.log(arr2.flat(Infinity));
+
+// const array1 = [4, 20, 29, 494, 49, 39];
+
+// let count = 0;
+
+// array1.forEach((value) => {
+//   count += value;
+// });
+
+// console.log(count);
+
+// const getAge = function (city, state) {
+//   return ` Your age is ${this.age} and your city is ${city} and you state is ${state}`;
+// };
+
+// const stdOne = {
+//   name: 'rohit',
+//   age: 34,
+// };
+
+// const stdTwo = {
+//   name: 'rahul',
+//   age: 33,
+// };
+
+// console.log(getAge.call(stdOne, 'bhopal', 'MP'));
+// console.log(getAge.apply(stdOne, ['bhopal', 'MP']));
+
+// const fn = getAge.bind(stdOne, 'bhopal', 'MP');
+
+// console.log(fn());
+
+// const obj = {
+//   name: 'rohit',
+//   age: 34,
+// };
+
+// for (const key in obj) {
+//   if (Object.hasOwnProperty.call(obj, key)) {
+//     const element = obj[key];
+//     console.log(element);
+//   }
+// }

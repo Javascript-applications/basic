@@ -224,3 +224,38 @@
 // const set = new Set([1, 2, 3, 5]);
 
 // console.log(set);
+
+// const User = function (name, password) {
+//   this.name = name;
+//   this.password = password;
+// };
+
+// User.prototype.printName = function () {
+//   console.log(this.name);
+// };
+
+// const Admin = function (name, password, course) {
+//   User.call(this, name, password);
+//   this.course = course;
+// };
+
+// Admin.prototype = Object.create(User.prototype);
+
+// Admin.prototype.Stats = function () {
+//   console.log('Stats');
+// };
+// const admin = new Admin('tc', '1244', 'science');
+
+// console.log(admin);
+
+// console.log(Admin.prototype);
+
+// async function getTodo() {
+//   const res = await fetch('https://jsonplaceholder.typicode.com/todos');
+//   const data = await res.json();
+//   return data;
+// }
+
+// window.addEventListener('click', async function () {
+//   const data = await getTodo();
+// });
